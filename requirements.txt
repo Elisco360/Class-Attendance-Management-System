@@ -128,7 +128,7 @@ stack-data==0.6.2
 streamlit==1.20.0
 streamlit-option-menu==0.3.2
 tenacity==8.2.2
-tensorboard
+tensorboard==2.9
 tensorboard-data-server
 tensorboard-plugin-wit
 tensorflow-estimator
