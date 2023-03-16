@@ -120,7 +120,7 @@ class Attendance:
         self.database['Status'] = "Absent 📕"
         self.database['Date'] = ''
         self.database['Time'] = ''
-        self.database.to_csv('FR-CAMS\\database\\records.csv', index=False, header=True)
+        self.database.to_csv('database\\records.csv', index=False, header=True)
 
     def __display_database(self):
         st.dataframe(self.database)
