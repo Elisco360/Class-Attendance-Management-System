@@ -114,13 +114,13 @@ class Attendance:
         self.database.loc[self.database['Student Name'] == name, 'Date'], t = date.today(), time.localtime()
         current_time = time.strftime("%H:%M:%S", t)
         self.database.loc[self.database['Student Name'] == name, 'Time'] = current_time
-        self.database.to_csv('FR-CAMS\\database\\records.csv', index=False, header=True)
+        self.database.to_csv('database/records.csv', index=False, header=True)
 
     def __reset_database__(self):
         self.database['Status'] = "Absent 📕"
         self.database['Date'] = ''
         self.database['Time'] = ''
-        self.database.to_csv('database\\records.csv', index=False, header=True)
+        self.database.to_csv('database/records.csv', index=False, header=True)
 
     def __display_database(self):
         st.dataframe(self.database)
