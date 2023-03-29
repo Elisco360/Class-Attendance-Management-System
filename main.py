@@ -1,7 +1,7 @@
 from cams import Attendance as atd
 
-embeddings = "embeddings/faces_embeddings.npz"
-model = "models/svm_model_v1.pkl"
+embeddings = "embeddings/face_embeddings.npz"
+model = "models/students_model_v1.pkl"
 database = "database/records.csv"
 
 ashesi = atd(database=database,
