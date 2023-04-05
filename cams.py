@@ -123,4 +123,4 @@ class Attendance:
         self.database.to_csv('database/records.csv', index=False, header=True)
 
     def __display_database(self):
-        st.dataframe(self.database)
+        st.dataframe(self.database, use_container_width=True)
