@@ -117,7 +117,7 @@ rfc3986-validator==0.1.1
 rich==13.3.2
 rsa==4.9
 scikit-learn==1.2.2
-scikit-image==0.20.0
+scikit-image
 scipy==1.10.1
 semver==2.13.0
 Send2Trash==1.8.0
