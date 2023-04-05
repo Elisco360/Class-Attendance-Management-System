@@ -27,13 +27,13 @@ class Attendance:
         self.encodings = self.encoder.transform(self.embeddings)
 
     @staticmethod
-    @st.cache_data
+    #@st.cache_data
     def __get_model__(model):
         m = pickle.load(open(model, 'rb'))
         return m
 
     @staticmethod
-    @st.cache_data
+    #@st.cache_data
     def __get_features__(emb):
         embed = np.load(emb)['arr_1']
         return embed
