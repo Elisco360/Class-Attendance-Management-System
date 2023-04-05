@@ -1,4 +1,3 @@
-from utils import Course, Student
 from train import DataAugmentation, train
 import streamlit as st
 from PIL.Image import Image
